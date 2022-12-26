@@ -17,7 +17,7 @@ fg.subtitle("カバーからの最新情報をお届けします。")
 fg.link(href=cover_news_url, rel="alternate")
 fg.language("ja")
 
-for elem in soup.find_all(href=re.compile("/news/detail/")):
+for elem in reversed(soup.find_all(href=re.compile("/news/detail/"))):
 
     news_url = "https://cover-corp.com" + elem.attrs["href"]
     news_title = elem.select("h4")[0].text
