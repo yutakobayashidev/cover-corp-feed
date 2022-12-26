@@ -21,14 +21,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Setup python
-        uses: actions/setup-python@v2 # Pythonのセットアップ
+        uses: actions/setup-python@v3 # Pythonのセットアップ
         with:
           python-version: "3.10.8" # Pythonのバージョン指定
       - name: Cache pip
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           # このパスは Ubuntu に固有です
           path: ~/.cache/pip
