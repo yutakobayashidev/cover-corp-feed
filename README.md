@@ -1,6 +1,6 @@
 # cover-corp-feed
 
-Scraprapraping [Cover Corp news pages](https://cover-corp.com/news) and generating Atom and RSS feeds.
+Scraping [Cover Corp news pages](https://cover-corp.com/news) and generating Atom and RSS feeds.
 
 ## Atom
 
